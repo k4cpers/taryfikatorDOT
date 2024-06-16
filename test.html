@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taryfikator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Taryfikator DOTu</h1>
+    <form id="calcForm">
+        <div>
+            <h2>Odholowania</h2>
+            <label>
+                <input type="checkbox" class="option" value="250"> 1.1 Na teren DOTu
+            </label>
+        </div>
+        <div>
+            <label>
+                <input type="checkbox" class="option" value="350"> 1.2 Odholowanie na parking policyjny 
+            </label>
+        </div>
+            <h3> Powód odholowania: </h3>
+        <div>
+            <label>
+                <input type="checkbox" class="option" value="500"> 2.3 Pojazd zastawiający wjazd na teren bazy służby mundurowej
+            </label>
+        </div>
+        <div>
+            <label>
+                <input type="checkbox" class="option" value="350"> 2.4 Pojazd porzucony/utrudniający ruch 
+            </label>
+        </div>
+        <div>
+            <label>
+                <input type="checkbox" class="option" value="200"> 2.5 Pojazd nieprawidłowo zaparkowany 
+            </label>
+        </div>
+        <div>
+            <label>
+                <input type="checkbox" class="option" value="100"> 2.6 Zły stan techniczny pojazdu
+            </label>
+        </div>
+        <div>
+            <label>
+                <input type="checkbox" class="option" value="450"> 2.7 Odholowywanie pojazdu na życzenie właściciela posesji/właściciela pojazdu
+            </label>
+        </div>
+        <h3> Czego należało użyć podczas danego zdarzenia: </h3>
+        <div>
+            <label>
+                <input type="checkbox" class="option" value="150"> 3.1 Generatora
+            </label>
+        </div>
+        <div>
+            <label>
+                <input type="checkbox" class="option" value="70"> 3.2 Barier
+            </label>
+        </div>
+        <div>
+            <label>
+                <input type="checkbox" class="option" value="50"> 3.3 Znaków (Stop,slow,road sing)
+            </label>
+        </div>
+        <div>
+            <label>
+                <input type="checkbox" class="option" value="50"> 3.4 Użycie pachołków (od sztuki)
+            </label>
+        </div>
+        <div>
+            <label>
+                <input type="checkbox" class="option" value="100"> 3.5 Piasku do oleju silnikowego po wypadku
+            </label>
+        </div>
+        <h2> Opcje dodatkowe:</h2>
+        <div>
+            <label>
+                <input type="checkbox" class="option" value="200"> 3.6.1 Potrzeba zmiany organizacji ruchu (ruch wachadłowy, zamknięcie pasa)
+            </label>
+        </div>
+        <div>
+            <label>
+                <input type="checkbox" class="option" value="350"> 3.6.2 Potrzeba zamknięcia drogi (i wyznaczenia objazdu)
+            </label>
+        </div>
+        <h2> Inne usługi: </h2>
+        <div>
+            <label>
+                <input type="checkbox" class="option" value="400"> 4.1 Blokada na koło
+            </label>
+        </div>
+        <div>
+            <label>
+                <input type="checkbox" class="option" value="320"> 4.2 Zatankowanie pojazdu
+            </label>
+        </div>
+        <div>
+            <label>
+                <input type="checkbox" class="option" value="240"> 4.3 Wymiana opony (od sztuki)
+            </label>
+        </div>
+
+        <button type="button" onclick="calculate()">Oblicz</button>
+    </form>
+    <p>Grzywna: <span id="result">0</span>$</p>
+
+    <script src="script.js"></script>
+</body>
+</html>
