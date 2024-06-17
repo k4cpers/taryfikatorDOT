@@ -31,3 +31,12 @@ button:hover {
 p {
     font-size: 1.2em;
 }
+
+footer {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #ccc;
+    text-align: center;
+    font-size: 0.9em;
+    color: #666;
+}
