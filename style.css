@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 20px;
     background-image: url(dot.png);
-    background-size: cover; 
+    background-size: auto; 
     background-repeat: no-repeat; 
     background-position: center;
 }
